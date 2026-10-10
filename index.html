@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Official Internship Verification | Kathi Vardhan Kumar - Conzura Soft Solutions</title>
+  <meta name="description" content="Official Certificate & Internship Recognition Portal for Kathi Vardhan Kumar in AIML at Conzura Soft Solutions. Certificate ID: CERT20260306." />
+
+  <!-- Google Fonts: Outfit, Montserrat & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Confetti Celebration Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <style>
+    /* ==========================================================================
+       CONZURA ENTERPRISE DESIGN SYSTEM & TOKENS
+       ========================================================================== */
+    :root {
+      --conzura-navy: #09203f;
+      --conzura-navy-deep: #051326;
+      --conzura-blue: #0b4f8a;
+      --conzura-blue-light: #1e70ba;
+      --conzura-teal: #088395;
+      --conzura-cyan: #00a896;
+      --conzura-orange: #f37021;
+      --conzura-orange-glow: rgba(243, 112, 33, 0.35);
+      --conzura-gold: #f59e0b;
+      --bg-surface: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border-subtle: #e2e8f0;
+      --radius-xl: 20px;
+      --radius-lg: 14px;
+      --radius-md: 8px;
+      --shadow-premium: 0 20px 40px -15px rgba(9, 32, 63, 0.12), 0 0 0 1px rgba(226, 232, 240, 0.9);
+      --shadow-card: 0 10px 30px -5px rgba(8, 131, 149, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', 'Inter', -apple-system, sans-serif;
+      background: #f1f5f9;
+      background-image: 
+        radial-gradient(at 10% 10%, rgba(8, 131, 149, 0.08) 0px, transparent 50%),
+        radial-gradient(at 90% 15%, rgba(243, 112, 33, 0.07) 0px, transparent 50%),
+        radial-gradient(at 50% 90%, rgba(11, 79, 138, 0.06) 0px, transparent 50%);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ==========================================================================
+       CONZURA BESPOKE NAVIGATION BAR
+       ========================================================================== */
+    .conzura-navbar {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px -10px rgba(9, 32, 63, 0.08);
+    }
+
+    .nav-wrapper {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand-identity {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo-svg {
+      width: 42px;
+      height: 42px;
+      filter: drop-shadow(0 4px 8px rgba(8, 131, 149, 0.25));
+      transition: transform 0.3s ease;
+    }
+
+    .brand-identity:hover .brand-logo-svg {
+      transform: rotate(5deg) scale(1.05);
+    }
+
+    .brand-title-wrap h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.28rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: var(--conzura-navy);
+      line-height: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .brand-title-wrap h1 span {
+      color: var(--conzura-orange);
+    }
+
+    .brand-title-wrap p {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      color: var(--conzura-teal);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-search-portal {
+      flex: 1;
+      max-width: 440px;
+      position: relative;
+    }
+
+    .nav-search-portal i {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--conzura-teal);
+      font-size: 0.9rem;
+    }
+
+    .nav-search-portal input {
+      width: 100%;
+      padding: 0.55rem 1rem 0.55rem 2.4rem;
+      border-radius: 30px;
+      border: 1.5px solid var(--border-subtle);
+      background: #f8fafc;
+      font-size: 0.85rem;
+      color: var(--conzura-navy);
+      font-weight: 600;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .nav-search-portal input:focus {
+      border-color: var(--conzura-teal);
+      background: #ffffff;
+      box-shadow: 0 0 0 4px rgba(8, 131, 149, 0.12);
+    }
+
+    .nav-right-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .badge-portal-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      color: #065f46;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .live-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    .btn-contact-hr {
+      color: var(--conzura-blue);
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: var(--radius-md);
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-contact-hr:hover {
+      background: #e2e8f0;
+      color: var(--conzura-orange);
+    }
+
+    /* ==========================================================================
+       HERO / VERIFICATION STATUS BANNER
+       ========================================================================== */
+    .portal-hero {
+      background: linear-gradient(135deg, #09203f 0%, #0c3963 50%, #084c61 100%);
+      color: #ffffff;
+      padding: 2.25rem 1.5rem 2.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portal-hero::after {
+      content: '';
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, rgba(243, 112, 33, 0.16) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-info-left {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .user-avatar-badge {
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f37021, #e59819);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(243, 112, 33, 0.35);
+      border: 3px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-title-meta h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .hero-title-meta h2 span {
+      background: linear-gradient(90deg, #ff9d42, #ffcb77);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subline {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      margin-top: 4px;
+    }
+
+    .hero-subline strong {
+      color: #ffffff;
+    }
+
+    .hero-actions-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* Interactive Action Buttons */
+    .btn-action-verify {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #10b981;
+      color: #ffffff;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+      transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .btn-action-verify:hover {
+      background: #059669;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+    }
+
+    .btn-action-celebrate {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #f37021, #ff8c2b);
+      color: #ffffff;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 30px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 18px var(--conzura-orange-glow);
+      transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .btn-action-celebrate:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 8px 25px rgba(243, 112, 33, 0.5);
+    }
+
+    .btn-action-celebrate:active {
+      transform: scale(0.97);
+    }
+
+    /* ==========================================================================
+       MAIN WORKSPACE LAYOUT
+       ========================================================================== */
+    .portal-main {
+      max-width: 1240px;
+      margin: -1.25rem auto 3.5rem;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 10;
+      width: 100%;
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 440px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    @media (max-width: 992px) {
+      .main-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ==========================================================================
+       LEFT COLUMN: BESPOKE HIGH-END CERTIFICATE DISPLAY
+       ========================================================================== */
+    .certificate-card-wrap {
+      background: var(--bg-card);
+      border-radius: var(--radius-xl);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-premium);
+      border: 1px solid var(--border-subtle);
+      position: sticky;
+      top: 86px;
+    }
+
+    .cert-frame-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .cert-frame-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--conzura-navy);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cert-id-tag-badge {
+      background: #f0fdfa;
+      color: var(--conzura-teal);
+      border: 1px solid #99f6e4;
+      font-family: 'Montserrat', monospace;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .cert-image-frame {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(9, 32, 63, 0.08);
+      position: relative;
+      cursor: pointer;
+      border: 1px solid #e2e8f0;
+      transition: all 0.3s ease;
+      background: #fdfdfd;
+    }
+
+    .cert-image-frame:hover {
+      box-shadow: 0 15px 35px rgba(8, 131, 149, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .cert-image-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .cert-image-frame:hover img {
+      transform: scale(1.015);
+    }
+
+    .cert-overlay-hover {
+      position: absolute;
+      inset: 0;
+      background: rgba(9, 32, 63, 0.35);
+      backdrop-filter: blur(2px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .cert-image-frame:hover .cert-overlay-hover {
+      opacity: 1;
+    }
+
+    .cert-toolbar-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      gap: 8px;
+    }
+
+    .cert-action-btn {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      background: #f8fafc;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--conzura-navy);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+
+    .cert-action-btn:hover {
+      background: #ffffff;
+      border-color: var(--conzura-blue);
+      color: var(--conzura-blue);
+    }
+
+    .cert-action-btn.btn-accent {
+      background: linear-gradient(135deg, var(--conzura-blue), var(--conzura-teal));
+      color: #ffffff;
+      border: none;
+    }
+
+    .cert-action-btn.btn-accent:hover {
+      opacity: 0.92;
+      color: #ffffff;
+    }
+
+    /* ==========================================================================
+       RIGHT COLUMN: DETAILED RECOGNITION DOSSIER
+       ========================================================================== */
+    .recognition-dossier {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .dossier-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-xl);
+      padding: 1.75rem 2rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-card);
+    }
+
+    .card-heading-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .badge-domain-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(8, 131, 149, 0.1);
+      color: var(--conzura-teal);
+      border: 1px solid rgba(8, 131, 149, 0.25);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .dossier-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--conzura-navy);
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    .dossier-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .dossier-subtitle strong {
+      color: var(--conzura-blue);
+    }
+
+    /* Official Commendation Statement */
+    .commendation-box {
+      background: linear-gradient(135deg, #f8fafc 0%, #f0f7ff 100%);
+      border-left: 4px solid var(--conzura-orange);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-bottom: 1.75rem;
+      font-size: 0.98rem;
+      color: #334155;
+      line-height: 1.75;
+    }
+
+    .commendation-box p {
+      margin-bottom: 0.75rem;
+    }
+
+    .commendation-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-name {
+      font-weight: 800;
+      color: var(--conzura-navy);
+      background: rgba(243, 112, 33, 0.12);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* Key Specs Table Grid */
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .spec-item {
+      background: #f8fafc;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1rem;
+    }
+
+    .spec-item .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #64748b;
+      font-weight: 600;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .spec-item .value {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--conzura-navy);
+    }
+
+    /* Skills & Technology Grid */
+    .skills-section-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--conzura-navy);
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skills-section-title i {
+      color: var(--conzura-orange);
+    }
+
+    .skill-chips-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-chip {
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #334155;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .skill-chip i {
+      color: var(--conzura-teal);
+      font-size: 0.75rem;
+    }
+
+    .skill-chip:hover {
+      border-color: var(--conzura-teal);
+      background: #f0fdfa;
+      color: var(--conzura-teal);
+      transform: translateY(-1px);
+    }
+
+    /* Corporate & Institutional Accreditation Card */
+    .accreditation-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .accreditation-box {
+      border: 1px solid var(--border-subtle);
+      background: #f8fafc;
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .accreditation-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--conzura-teal);
+      font-size: 1.25rem;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .accreditation-text h4 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--conzura-navy);
+      margin-bottom: 2px;
+    }
+
+    .accreditation-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       VERIFICATION AUDIT MODAL
+       ========================================================================== */
+    .audit-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(9, 32, 63, 0.7);
+      backdrop-filter: blur(6px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .audit-modal-backdrop.active {
+      display: flex;
+    }
+
+    .audit-modal-card {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+      animation: modalPop 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes modalPop {
+      from { transform: scale(0.92); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .modal-head {
+      padding: 1.25rem 1.75rem;
+      border-bottom: 1px solid #e2e8f0;
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .modal-head h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--conzura-navy);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modal-head h3 i {
+      color: #10b981;
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      font-size: 1.35rem;
+      color: #64748b;
+      cursor: pointer;
+    }
+
+    .modal-body-content {
+      padding: 1.75rem;
+    }
+
+    .loader-wrap {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .spinner-circle {
+      width: 50px;
+      height: 50px;
+      border: 4px solid #e2e8f0;
+      border-top-color: var(--conzura-teal);
+      border-radius: 50%;
+      display: inline-block;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .audit-result-view {
+      display: none;
+    }
+
+    .audit-success-pill {
+      background: #ecfdf5;
+      border: 1.5px solid #86efac;
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1.5rem;
+    }
+
+    .audit-success-pill i {
+      font-size: 1.75rem;
+      color: #10b981;
+    }
+
+    .audit-success-pill strong {
+      display: block;
+      color: #065f46;
+      font-size: 0.98rem;
+    }
+
+    .audit-success-pill p {
+      color: #047857;
+      font-size: 0.82rem;
+    }
+
+    .audit-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    .audit-table tr {
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .audit-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .audit-table td {
+      padding: 9px 4px;
+    }
+
+    .audit-table td.col-label {
+      color: #64748b;
+      font-weight: 600;
+      width: 38%;
+    }
+
+    .audit-table td.col-val {
+      color: var(--conzura-navy);
+      font-weight: 700;
+    }
+
+    .modal-foot {
+      padding: 1rem 1.75rem;
+      border-top: 1px solid #e2e8f0;
+      background: #fafafa;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn-modal-done {
+      background: var(--conzura-blue);
+      color: #ffffff;
+      border: none;
+      padding: 8px 24px;
+      border-radius: var(--radius-md);
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-modal-done:hover {
+      background: #083b68;
+    }
+
+    /* ==========================================================================
+       FULLSCREEN HIGH-RES CERTIFICATE VIEWER
+       ========================================================================== */
+    .fullscreen-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 19, 38, 0.88);
+      backdrop-filter: blur(8px);
+      z-index: 10001;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .fullscreen-modal-backdrop.active {
+      display: flex;
+    }
+
+    .fullscreen-modal-container {
+      background: #ffffff;
+      border-radius: var(--radius-xl);
+      max-width: 800px;
+      width: 100%;
+      max-height: 94vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+    }
+
+    .fullscreen-body {
+      padding: 1.25rem;
+      overflow-y: auto;
+      text-align: center;
+      background: #f1f5f9;
+    }
+
+    .fullscreen-body img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .portal-footer {
+      background: var(--conzura-navy);
+      color: #94a3b8;
+      padding: 3rem 1.5rem 2rem;
+      margin-top: auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.85rem;
+    }
+
+    .footer-wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-col h5 {
+      color: #ffffff;
+      font-size: 0.98rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .footer-col p {
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-col ul li a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--conzura-orange);
+    }
+
+    .footer-bottom-bar {
+      max-width: 1240px;
+      margin: 2.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.78rem;
+    }
+
+    /* Toast Notification */
+    .portal-toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--conzura-navy);
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      z-index: 99999;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .portal-toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CONZURA ENTERPRISE NAVBAR
+       ========================================================================== */
+  -->
+  <header class="conzura-navbar">
+    <div class="nav-wrapper">
+      <!-- Conzura Logo & Branding -->
+      <a href="#" class="brand-identity" title="Conzura Soft Solutions Official Verification Portal">
+        <svg class="brand-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 8C26.8 8 8 26.8 8 50C8 73.2 26.8 92 50 92C65.5 92 79 83.5 86 71L72 63C67.5 71.5 59.2 77 50 77C35.1 77 23 64.9 23 50C23 35.1 35.1 23 50 23C60.5 23 69.5 29 74 38L88 30C80.5 16.8 66.2 8 50 8Z" fill="url(#blueGradNav)" />
+          <path d="M50 32C40 32 32 40 32 50C32 60 40 68 50 68C56.5 68 62.2 64.5 65.5 59H48V46H82V50C82 67.7 67.7 82 50 82C32.3 82 18 67.7 18 50C18 32.3 32.3 18 50 18C61.5 18 71.5 24 77 33.5L64.5 41C61.5 35.5 56 32 50 32Z" fill="url(#orangeGradNav)" />
+          <defs>
+            <linearGradient id="blueGradNav" x1="8" y1="8" x2="88" y2="88" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#0b4f8a" />
+              <stop offset="1" stop-color="#088395" />
+            </linearGradient>
+            <linearGradient id="orangeGradNav" x1="18" y1="18" x2="82" y2="82" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ff9800" />
+              <stop offset="1" stop-color="#f37021" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="brand-title-wrap">
+          <h1>CONZUR<span>A</span></h1>
+          <p>Soft Solutions</p>
+        </div>
+      </a>
+
+      <!-- Search verification lookup -->
+      <div class="nav-search-portal">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Verify Certificate ID..." value="CERT20260306" readonly />
+      </div>
+
+      <!-- Right badge and contact -->
+      <div class="nav-right-actions">
+        <div class="badge-portal-live">
+          <span class="live-dot"></span>
+          <span>Official Verification Portal</span>
+        </div>
+        <a href="mailto:hr@conzuragroups.in" class="btn-contact-hr">
+          <i class="fa-regular fa-envelope"></i>
+          <span>hr@conzuragroups.in</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO BANNER (RECIPIENT & ACTION SUITE)
+       ========================================================================== */
+  -->
+  <section class="portal-hero">
+    <div class="hero-container">
+      <div class="hero-info-left">
+        <div class="user-avatar-badge">VK</div>
+        <div class="hero-title-meta">
+          <h2>Kathi Vardhan Kumar <span>• AIML Intern</span></h2>
+          <div class="hero-subline">
+            Official Internship Certification Issued on <strong>August 05, 2026</strong> by <strong>Conzura Soft Solutions</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-actions-right">
+        <!-- Live Verify Button -->
+        <button class="btn-action-verify" id="btnVerifyPortal" onclick="openAuditModal()">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Verify Credential</span>
+        </button>
+
+        <!-- Celebrate Button with festive confetti animation -->
+        <button class="btn-action-celebrate" id="btnCelebratePortal" onclick="triggerCelebration()">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Celebrate</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MAIN CONTENT (CERTIFICATE + DOSSIER)
+       ========================================================================== */
+  -->
+  <main class="portal-main">
+    <div class="main-grid">
+
+      <!-- LEFT COLUMN: HIGH RESOLUTION CERTIFICATE SHOWCASE -->
+      <div class="certificate-card-wrap">
+        <div class="cert-frame-header">
+          <div class="cert-frame-title">
+            <i class="fa-solid fa-certificate" style="color: var(--conzura-orange);"></i>
+            <span>Official Issued Document</span>
+          </div>
+          <span class="cert-id-tag-badge">CERT20260306</span>
+        </div>
+
+        <!-- Direct Certificate Image -->
+        <div class="cert-image-frame" onclick="openFullscreenModal()" title="Click to view fullscreen">
+          <img src="cert_conzura.jpeg" alt="Official Internship Certificate of Kathi Vardhan Kumar - Conzura Soft Solutions" />
+          <div class="cert-overlay-hover">
+            <i class="fa-solid fa-expand"></i>
+            <span>Click to View Fullscreen</span>
+          </div>
+        </div>
+
+        <!-- Quick Toolbar -->
+        <div class="cert-toolbar-bottom">
+          <button class="cert-action-btn" onclick="copyVerificationLink()">
+            <i class="fa-regular fa-copy"></i> Copy Link
+          </button>
+          <button class="cert-action-btn btn-accent" onclick="openAuditModal()">
+            <i class="fa-solid fa-circle-check"></i> Audit Status
+          </button>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: RECOGNITION DOSSIER & PERFORMANCE -->
+      <div class="recognition-dossier">
+        
+        <!-- Main Verification Card -->
+        <div class="dossier-card">
+          <div class="card-heading-row">
+            <span class="badge-domain-tag">
+              <i class="fa-solid fa-brain"></i> Artificial Intelligence & Machine Learning
+            </span>
+            <span style="font-size: 0.82rem; font-weight: 700; color: #10b981;">
+              <i class="fa-solid fa-circle-check"></i> Authenticated & Active
+            </span>
+          </div>
+
+          <h2 class="dossier-title">Internship Completion Recognition</h2>
+          <p class="dossier-subtitle">
+            Conzura Soft Solutions formally certifies the successful completion of the AIML internship program by <strong>Kathi Vardhan Kumar</strong>.
+          </p>
+
+          <!-- Official Commendation Statement from Ganesh Reddy, CEO -->
+          <div class="commendation-box">
+            <p>
+              "This is to certify that <strong>Kathi Vardhan Kumar</strong> has successfully completed his/her internship in <strong>AIML</strong> at Conzura Soft Solutions from <strong>01 June 2026 to 29 July 2026</strong>."
+            </p>
+            <p>
+              "During the internship period, he/she worked with dedication, sincerity, and professionalism. He/She actively participated in assigned tasks and demonstrated good learning ability, teamwork, and technical understanding throughout the internship program."
+            </p>
+          </div>
+
+          <!-- Key Specification Grid -->
+          <div class="specs-grid">
+            <div class="spec-item">
+              <div class="label"><i class="fa-solid fa-id-card"></i> Certificate ID</div>
+              <div class="value" style="color: var(--conzura-blue); font-family: 'Montserrat', monospace;">CERT20260306</div>
+            </div>
+            <div class="spec-item">
+              <div class="label"><i class="fa-regular fa-calendar-days"></i> Internship Duration</div>
+              <div class="value">01 Jun 2026 – 29 Jul 2026</div>
+            </div>
+            <div class="spec-item">
+              <div class="label"><i class="fa-regular fa-calendar-check"></i> Issue Date</div>
+              <div class="value">05 August 2026</div>
+            </div>
+            <div class="spec-item">
+              <div class="label"><i class="fa-solid fa-user-tie"></i> Signatory</div>
+              <div class="value">Ganesh Reddy (CEO & Founder)</div>
+            </div>
+          </div>
+
+          <!-- Skills and Core Competencies -->
+          <h3 class="skills-section-title">
+            <i class="fa-solid fa-code"></i> Demonstrated Skills & Technical Competencies
+          </h3>
+          <div class="skill-chips-wrap">
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Artificial Intelligence</span>
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Machine Learning (ML)</span>
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Deep Learning</span>
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Python Programming</span>
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Neural Network Architectures</span>
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Data Modeling & Evaluation</span>
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Algorithm Optimization</span>
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Collaborative Teamwork</span>
+            <span class="skill-chip"><i class="fa-solid fa-check"></i> Problem Solving</span>
+          </div>
+        </div>
+
+        <!-- Corporate Institutional Verification Card -->
+        <div class="dossier-card">
+          <h3 class="skills-section-title">
+            <i class="fa-solid fa-building-shield"></i> Institutional Verification & Standards
+          </h3>
+          
+          <div class="accreditation-row">
+            <div class="accreditation-box">
+              <div class="accreditation-icon">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="accreditation-text">
+                <h4>AICTE Standards Aligned</h4>
+                <p>Curriculum, practical assignments, and evaluation align with AICTE internship guidelines.</p>
+              </div>
+            </div>
+
+            <div class="accreditation-box">
+              <div class="accreditation-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="accreditation-text">
+                <h4>Corporate Headquarters</h4>
+                <p>Block L, Embassy TechVillage, Outer Ring Rd, Bengaluru, Karnataka, 560103.</p>
+              </div>
+            </div>
+
+            <div class="accreditation-box">
+              <div class="accreditation-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="accreditation-text">
+                <h4>HR Verification Support</h4>
+                <p>Phone: +91 6300683792<br/>Email: hr@conzuragroups.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       AUDIT & VERIFICATION MODAL
+       ========================================================================== */
+  -->
+  <div class="audit-modal-backdrop" id="auditModal">
+    <div class="audit-modal-card">
+      <div class="modal-head">
+        <h3><i class="fa-solid fa-shield-halved"></i> Credential Verification Audit</h3>
+        <button class="modal-close-btn" onclick="closeAuditModal()">&times;</button>
+      </div>
+
+      <div class="modal-body-content">
+        <!-- Live Checking Animation -->
+        <div class="loader-wrap" id="auditLoader">
+          <div class="spinner-circle"></div>
+          <p style="font-size: 0.92rem; color: #475569; font-weight: 600;">Authenticating cryptographic hash with Conzura registry...</p>
+        </div>
+
+        <!-- Result View -->
+        <div class="audit-result-view" id="auditResult">
+          <div class="audit-success-pill">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>100% Authenticated Credential</strong>
+              <p>Certificate record actively validated in Conzura database.</p>
+            </div>
+          </div>
+
+          <table class="audit-table">
+            <tr>
+              <td class="col-label">Recipient Name</td>
+              <td class="col-val">Kathi Vardhan Kumar</td>
+            </tr>
+            <tr>
+              <td class="col-label">Certificate ID</td>
+              <td class="col-val" style="color: var(--conzura-blue); font-family: 'Montserrat', monospace;">CERT20260306</td>
+            </tr>
+            <tr>
+              <td class="col-label">Domain</td>
+              <td class="col-val">AIML (Artificial Intelligence & Machine Learning)</td>
+            </tr>
+            <tr>
+              <td class="col-label">Internship Tenure</td>
+              <td class="col-val">01 June 2026 to 29 July 2026</td>
+            </tr>
+            <tr>
+              <td class="col-label">Issuance Date</td>
+              <td class="col-val">05-08-2026</td>
+            </tr>
+            <tr>
+              <td class="col-label">Issuing Organization</td>
+              <td class="col-val">Conzura Soft Solutions</td>
+            </tr>
+            <tr>
+              <td class="col-label">Authorized Signatory</td>
+              <td class="col-val">Ganesh Reddy (CEO & Founder)</td>
+            </tr>
+            <tr>
+              <td class="col-label">Accreditation</td>
+              <td class="col-val">AICTE Approved Partner</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="modal-foot">
+        <button class="btn-modal-done" onclick="closeAuditModal()">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FULLSCREEN HIGH-RES CERTIFICATE VIEWER MODAL
+       ========================================================================== */
+  -->
+  <div class="fullscreen-modal-backdrop" id="fullscreenModal">
+    <div class="fullscreen-modal-container">
+      <div class="modal-head">
+        <h3><i class="fa-regular fa-image" style="color: var(--conzura-orange);"></i> Certificate Document View (cert_conzura.jpeg)</h3>
+        <button class="modal-close-btn" onclick="closeFullscreenModal()">&times;</button>
+      </div>
+      <div class="fullscreen-body">
+        <img src="cert_conzura.jpeg" alt="Conzura Soft Solutions Certificate Scan" />
+      </div>
+      <div class="modal-foot">
+        <button class="btn-modal-done" onclick="closeFullscreenModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="portal-toast" id="toastBox">
+    <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+    <span id="toastText">Verification link copied!</span>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== */
+  -->
+  <footer class="portal-footer">
+    <div class="footer-wrap">
+      <div class="footer-col">
+        <h5>Conzura Soft Solutions</h5>
+        <p>A software development and technology enterprise delivering high-performance AI, Machine Learning, and Cloud engineering solutions.</p>
+        <p><i class="fa-solid fa-location-dot" style="color: var(--conzura-orange);"></i> Block L, Embassy TechVillage, Outer Ring Rd, Bengaluru, Karnataka, 560103</p>
+      </div>
+      <div class="footer-col">
+        <h5>Official Channels</h5>
+        <ul>
+          <li><a href="https://www.conzuragroups.com" target="_blank">www.conzuragroups.com</a></li>
+          <li><a href="mailto:hr@conzuragroups.in">hr@conzuragroups.in</a></li>
+          <li><a href="tel:+916300683792">+91 6300683792</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Credential Record</h5>
+        <p><strong>Earner:</strong> Kathi Vardhan Kumar</p>
+        <p><strong>ID:</strong> CERT20260306</p>
+        <p><strong>Status:</strong> Active / Verified</p>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div>&copy; 2026 Conzura Soft Solutions. All Rights Reserved.</div>
+      <div>Official Digital Credential Registry System</div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PORTAL JAVASCRIPT LOGIC
+       ========================================================================== */
+  -->
+  <script>
+    // Celebration Confetti Cannon
+    function triggerCelebration() {
+      const count = 220;
+      const defaults = {
+        origin: { y: 0.7 },
+        zIndex: 20000
+      };
+
+      function fire(particleRatio, opts) {
+        confetti(Object.assign({}, defaults, opts, {
+          particleCount: Math.floor(count * particleRatio)
+        }));
+      }
+
+      // Conzura brand vibrant color palette
+      const colors = ['#088395', '#0b4f8a', '#f37021', '#ff9800', '#00a896', '#10b981'];
+
+      fire(0.25, { spread: 26, startVelocity: 55, colors });
+      fire(0.2, { spread: 60, colors });
+      fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8, colors });
+      fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2, colors });
+      fire(0.1, { spread: 120, startVelocity: 45, colors });
+
+      showToast('🎉 Congratulations Kathi Vardhan Kumar on completing your AIML Internship!');
+    }
+
+    // Verification Audit Modal Logic
+    function openAuditModal() {
+      const modal = document.getElementById('auditModal');
+      const loader = document.getElementById('auditLoader');
+      const result = document.getElementById('auditResult');
+
+      modal.classList.add('active');
+      loader.style.display = 'block';
+      result.style.display = 'none';
+
+      // 600ms realistic cryptographic database lookup
+      setTimeout(() => {
+        loader.style.display = 'none';
+        result.style.display = 'block';
+      }, 600);
+    }
+
+    function closeAuditModal() {
+      document.getElementById('auditModal').classList.remove('active');
+    }
+
+    // Fullscreen Certificate Modal
+    function openFullscreenModal() {
+      document.getElementById('fullscreenModal').classList.add('active');
+    }
+
+    function closeFullscreenModal() {
+      document.getElementById('fullscreenModal').classList.remove('active');
+    }
+
+    // Toast helper
+    function showToast(msg) {
+      const toast = document.getElementById('toastBox');
+      const text = document.getElementById('toastText');
+      text.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3500);
+    }
+
+    // Copy link helper
+    function copyVerificationLink() {
+      const url = window.location.href;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          showToast('📋 Verification link copied to clipboard!');
+        }).catch(() => {
+          showToast('URL: ' + url);
+        });
+      } else {
+        showToast('URL: ' + url);
+      }
+    }
+
+    // Backdrop click handlers
+    window.addEventListener('click', (e) => {
+      const audit = document.getElementById('auditModal');
+      const full = document.getElementById('fullscreenModal');
+      if (e.target === audit) closeAuditModal();
+      if (e.target === full) closeFullscreenModal();
+    });
+  </script>
+</body>
+</html>
